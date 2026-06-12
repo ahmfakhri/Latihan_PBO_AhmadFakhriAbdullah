@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 12, 2026 at 03:12 AM
+-- Generation Time: Jun 12, 2026 at 03:54 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.30
 
@@ -33,7 +33,7 @@ CREATE TABLE `tabel_tiket` (
   `jadwal_tayang` datetime NOT NULL,
   `jumlah_kursi` int NOT NULL,
   `harga_dasar_tiket` decimal(10,2) NOT NULL,
-  `jenis_studio` enum('Regular','IAX','Velvet') NOT NULL,
+  `jenis_studio` enum('Regular','IMAX','Velvet') NOT NULL,
   `tipe_audio` varchar(50) DEFAULT NULL,
   `lokasi_baris` varchar(20) DEFAULT NULL,
   `kacamata_3d_id` varchar(30) DEFAULT NULL,
@@ -54,13 +54,13 @@ INSERT INTO `tabel_tiket` (`id_tiket`, `nama_film`, `jadwal_tayang`, `jumlah_kur
 (5, 'Agak Laen 2', '2026-06-13 14:00:00', 100, 42000.00, 'Regular', 'Dolby 5.1', 'A-E', NULL, NULL, NULL, NULL),
 (6, 'Siksa Kubur 2', '2026-06-14 18:00:00', 85, 43000.00, 'Regular', 'Dolby 7.1', 'F-H', NULL, NULL, NULL, NULL),
 (7, 'Petualangan Sherina 3', '2026-06-14 20:00:00', 95, 40000.00, 'Regular', 'Stereo', 'C-F', NULL, NULL, NULL, NULL),
-(8, 'Avatar: Fire and Ash', '2026-06-12 13:30:00', 80, 75000.00, 'IAX', 'IAX Surround', 'A-C', '3D-IAX-001', 'Kursi getar dan efek angin', NULL, NULL),
-(9, 'Godzilla x Kong 2', '2026-06-12 16:00:00', 75, 80000.00, 'IAX', 'IAX Dolby Atmos', 'D-F', '3D-IAX-002', 'Kursi getar dan efek cahaya', NULL, NULL),
-(10, 'Spider-Man: Beyond the Spider-Verse', '2026-06-13 11:00:00', 85, 78000.00, 'IAX', 'IAX Surround', 'A-D', '3D-IAX-003', 'Efek gerak kursi', NULL, NULL),
-(11, 'Jurassic World Rebirth', '2026-06-13 13:45:00', 70, 85000.00, 'IAX', 'IAX Dolby Atmos', 'E-G', '3D-IAX-004', 'Efek angin dan getaran', NULL, NULL),
-(12, 'Fast X Part 2', '2026-06-13 19:00:00', 78, 82000.00, 'IAX', 'IAX Surround', 'B-E', '3D-IAX-005', 'Efek gerak kursi dan bass', NULL, NULL),
-(13, 'Transformers: New Era', '2026-06-14 15:00:00', 80, 79000.00, 'IAX', 'IAX Dolby Atmos', 'C-F', '3D-IAX-006', 'Efek getar dan cahaya', NULL, NULL),
-(14, 'The Meg 3', '2026-06-14 21:00:00', 72, 83000.00, 'IAX', 'IAX Surround', 'A-C', '3D-IAX-007', 'Efek air dan angin', NULL, NULL),
+(8, 'Avatar: Fire and Ash', '2026-06-12 13:30:00', 80, 75000.00, 'IMAX', 'IAX Surround', 'A-C', '3D-IAX-001', 'Kursi getar dan efek angin', NULL, NULL),
+(9, 'Godzilla x Kong 2', '2026-06-12 16:00:00', 75, 80000.00, 'IMAX', 'IAX Dolby Atmos', 'D-F', '3D-IAX-002', 'Kursi getar dan efek cahaya', NULL, NULL),
+(10, 'Spider-Man: Beyond the Spider-Verse', '2026-06-13 11:00:00', 85, 78000.00, 'IMAX', 'IAX Surround', 'A-D', '3D-IAX-003', 'Efek gerak kursi', NULL, NULL),
+(11, 'Jurassic World Rebirth', '2026-06-13 13:45:00', 70, 85000.00, 'IMAX', 'IAX Dolby Atmos', 'E-G', '3D-IAX-004', 'Efek angin dan getaran', NULL, NULL),
+(12, 'Fast X Part 2', '2026-06-13 19:00:00', 78, 82000.00, 'IMAX', 'IAX Surround', 'B-E', '3D-IAX-005', 'Efek gerak kursi dan bass', NULL, NULL),
+(13, 'Transformers: New Era', '2026-06-14 15:00:00', 80, 79000.00, 'IMAX', 'IAX Dolby Atmos', 'C-F', '3D-IAX-006', 'Efek getar dan cahaya', NULL, NULL),
+(14, 'The Meg 3', '2026-06-14 21:00:00', 72, 83000.00, 'IMAX', 'IAX Surround', 'A-C', '3D-IAX-007', 'Efek air dan angin', NULL, NULL),
 (15, 'The Conjuring: Last Rites', '2026-06-12 18:30:00', 40, 120000.00, 'Velvet', 'Dolby Atmos', 'Sofa A-B', NULL, NULL, 'Bantal dan selimut', 'Tersedia'),
 (16, 'Romansa Senja', '2026-06-12 20:45:00', 35, 110000.00, 'Velvet', 'Dolby 7.1', 'Sofa C-D', NULL, NULL, 'Selimut premium', 'Tersedia'),
 (17, 'Laskar Pelangi 2', '2026-06-13 16:30:00', 38, 115000.00, 'Velvet', 'Dolby Atmos', 'Sofa A-C', NULL, NULL, 'Bantal dan selimut', 'Tersedia'),
