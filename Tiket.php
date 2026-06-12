@@ -56,7 +56,7 @@ abstract class Tiket
     abstract public function hitungTotalHarga();
 
     // Method abstrak untuk menampilkan fasilitas sesuai jenis studio
-    abstract public function tampilkanInfofasilitas();
+    abstract public function tampilkanInfoFasilitas();
 }
 
 ?>
