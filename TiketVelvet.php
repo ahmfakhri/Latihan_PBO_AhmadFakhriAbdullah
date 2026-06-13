@@ -17,9 +17,7 @@ class TiketVelvet extends Tiket
 
     public function hitungTotalHarga()
     {
-        $biayaTambahanVelvet = 50000;
-
-        return ($this->hargaDasarTiket + $biayaTambahanVelvet) * $this->jumlah_kursi;
+    return ($this->jumlah_kursi * $this->hargaDasarTiket) * 1.50;
     }
 
     public function tampilkanInfoFasilitas()
